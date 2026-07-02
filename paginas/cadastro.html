@@ -42,65 +42,50 @@
             <input type="text" name="pesquisa" id="pesquisa" placeholder="Digite seu produto">
         </section>
 
-        <section id="cards">
-            <div class="card">
-                <img src="imagens/cesto01.jpg" alt="Cesto 01" class="img_card">
+       <section id="formulario">
+        <h3>Cadastro</h3>
+       </section>
 
-                <h2 class="tito_card"> Cesto 01</h2>
+       <form id="pessoa">
+        <label for="nome">CPF</label>
 
-                <h3 class="valor_card">
-                    R$ 45,00
-                </h3>
 
-                <button class="btn_card">Adicionar</button>
-            </div>
-            <div class="card">
-                <img src="imagens/cesto01.jpg" alt="Cesto 01" class="img_card">
 
-                <h2 class="tito_card"> Cesto 01</h2>
 
-                <h3 class="valor_card">
-                    R$ 45,00
-                </h3>
+        <input type="nome" class="input01" required maxlength="60" placeholder="Digite seu nome">
 
-                <button class="btn_card">Adicionar</button>
-            </div>
-            <div class="card">
-                <img src="imagens/cesto01.jpg" alt="Cesto 01" class="img_card">
-
-                <h2 class="tito_card"> Cesto 01</h2>
-
-                <h3 class="valor_card">
-                    R$ 45,00
-                </h3>
-
-                <button class="btn_card">Adicionar</button>
-            </div>
-            <div class="card">
-                <img src="imagens/cesto01.jpg" alt="Cesto 01" class="img_card">
-
-                <h2 class="tito_card"> Cesto 01</h2>
-
-                <h3 class="valor_card">
-                    R$ 45,00
-                </h3>
-
-                <button class="btn_card">Adicionar</button>
-            </div>
-            <div class="card">
-                <img src="imagens/cesto01.jpg" alt="Cesto 01" class="img_card">
-
-                <h2 class="tito_card"> Cesto 01</h2>
-
-                <h3 class="valor_card">
-                    R$ 45,00
-                </h3>
-
-                <button class="btn_card">Adicionar</button>
-            </div>
+        <label for="data-nascimento">Data Nascimento</label>
+        <input type="date" name="data-nascimento" id="data-nascimento" class="input01" required>
            
-        </section>
+        <label for="sexo">Sexo</label>
+        <input type="radio" name="sexo" id="sexoM" class="inputOP" value="M"> Masculino
+        <input type="radio" name="sexo" id="sexoM" class="inputOP" value="M"> Feminino
+        <input type="radio" name="sexo" id="sexoM" class="inputOP" value="M"> Não quero Declarar
 
+        <label for="cep">CEP</label>
+        <input type="text" name="cep" id="cep" class="input02" required maxlength="9" placeholder="Digite seu CEP">
+
+        <div id="div-dados-endereço" class="oculto">
+            <label for="lagradouro">lagradouro</label>
+            <input type="text" name="logradouro" id="logradouro" class="input01">
+
+            <label for="num-residencia">Número</label>
+            <input type="text" name="logradouro" id="logradouro" class="input01">
+
+            <label for="complemento-end">complemento</label>
+            <input type="text" name="complemento-end" class-input01>
+
+            <label for="bairro">Bairro</label>
+            <input type="text" name="bairro" id="bairro" class="input01">
+
+            <label for="localidade">Localidade</label>
+            <input type="text" name="localidade" id="localidade" class="input01">
+
+            <label for="uf">UF</label>
+            <input type="text" name="uf" id="uf" class="input01"
+
+        </div>
+    </form>  
         <footer id="rodape">
             <div id="dadosloja">
                 <h2>Rua sei la das quantas, 1001 - centro</h2>

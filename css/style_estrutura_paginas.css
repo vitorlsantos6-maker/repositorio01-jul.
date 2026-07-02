@@ -13,6 +13,7 @@
     --cor_principal: #fbff00;
     --cor_botao01: #0004ff;
     --cor_vermelha: #ffffff
+    --cor_suave: #ffffff
 }
 /*CONFIGURANDO O TAG main*/
 #geral{
@@ -101,4 +102,91 @@
     height: 80px;
     padding: 20px;
     border-radius:  ;
+}
+
+#pesquisa input{
+    width: 600px;
+    height: 80px;
+    padding: 20px;
+    border-radius: 8px;
+    font-size: 2em;
+    background-color: var(--cor_link_menu);
+}
+
+#cards{
+    width: 1000px;
+    min-height: 20px 0px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 20px;
+    cursor: pointer;
+}
+
+.card{
+    width: 250px;
+    min-height: solid 1px var(--cor_principal);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card:hover{
+    transform: translateY(-5px);
+}
+
+.card h2{
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin: 10px 0px;
+}
+
+.card h3{
+    margin: 20px 0px;
+}
+
+.card button{
+    width: 100%;
+    height: 45px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    border: none;
+    background-color: var(--cor_link_menu);
+    cursor: pointer;
+}
+
+.card img{
+    width: 100%;
+    height: 150px;
+}
+
+/*FORMATAÇÃO DO RODAPÉ*/
+#rodape{
+    width: 100%;
+    height: 300px;
+    background-color: var(--cor_link_menu);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#dadosloja{
+    font-size: 0.8em;
+}
+
+#icones-sociais ul {
+    list-style: none;
+}
+
+#icones-sociais img{
+    width: 25px;
+    height: 25px;
+    margin-left: 50px;
+}
+
+#div-cartoes img{
+    width: 25px;
+    height: 25px;
 }
