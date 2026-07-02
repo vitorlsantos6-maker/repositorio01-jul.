@@ -1,22 +1,29 @@
-
+/*IMPORTANDO A FONTE ROBOTO DO GOOGLE FONT*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+/*ATRIBUINDO EM TODOS OS ELEMNTOS*/
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
     font-family: roboto;
 }
+/*CIANDO VARIÁVEIS*/
 :root{
     --cor_principal: #fbff00;
     --cor_botao01: #0004ff;
+    --cor_vermelha: #ffffff
 }
-
+/*CONFIGURANDO O TAG main*/
 #geral{
     margin: 20px;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-
+/*CONFIGURANDO O CABEÇALHO DAPÁGINA*/
 #cabecalho{
     width: 100%;
     height: 200px;
@@ -27,8 +34,71 @@
     justify-content: center;
     align-items: center;
 }
-
+/*ALTERANDO O TAMANHO DA IMAGEM DO LOGO*/
 #logo img{
     width: 250px;
     height: 160px;
+}
+/*CONFIGURANDO A TAG nav POR MEIO DO SEU ID*/
+#menu{
+    width: 700px;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*CONFIGURANDO OS LI DO UL DO CABEÇALHO NA HONRIZONTAL*/
+#cabecalho{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+/*CONFIGURANDO OS TAMANHOS DO ÍCONES*/
+#div-icones img{
+    width: 70px;
+    height: 60px;
+}
+
+/*FORMATANDO OS MENUS*/
+#menu a:link{
+    font-size: 1.3em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--cor_link_menu);
+}
+#menu a:visited{
+    font-size: 1.3em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--cor_link_menu);
+}
+
+#menu a:hover{
+    font-size: 1.6em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--cor_link_menu);
+}
+
+#menu a:active{
+    font-size: 1.3em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--cor_link_menu);
+}
+
+/*FORMATANDO section PELO ID PESQUISA*/
+#pesquisa{
+    width: 1000px;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#pesquisa{
+    width: 600px;
+    height: 80px;
+    padding: 20px;
+    border-radius:  ;
 }
